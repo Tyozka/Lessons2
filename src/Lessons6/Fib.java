@@ -1,3 +1,5 @@
+package Lessons6;
+
 /**
  * Created by hillel on 21.05.17.
  */

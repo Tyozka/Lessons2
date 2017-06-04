@@ -1,3 +1,5 @@
+package Lessons6;
+
 import static java.lang.StrictMath.abs;
 
 /**
