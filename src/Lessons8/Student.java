@@ -6,9 +6,6 @@ public class Student {
     private int[] marks;
 
 
-    //  конструктор по умолчанию
-    public Student(){
-    }
 
     // конструктор
     public Student(String firstName, String lastName){
