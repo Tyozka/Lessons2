@@ -43,10 +43,6 @@ public class Main{
         }
 //        System.out.println(otlichnik2.getGramot());
 
-
-
-
-
     }
 
     public static void logStudent(int index, Student student){

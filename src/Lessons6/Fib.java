@@ -8,11 +8,12 @@ public class Fib {
         System.out.println(fib(12));
 
     }
-    public static int fib (int index){
-        if(index == 0 || index == 1){
-            return  1;
+
+    public static int fib(int index) {
+        if (index == 0 || index == 1) {
+            return 1;
         } else {
-            return fib(index-1) + fib(index-2);
+            return fib(index - 1) + fib(index - 2);
         }
 
     }
