@@ -22,5 +22,6 @@ public class MyStudent extends Person {
         return "Hello, My name is - " + getSurname();
     }
 
+   //todo реализовать equals и hashCode
 
 }

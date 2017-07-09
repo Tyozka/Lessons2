@@ -1,5 +1,7 @@
 package Lessonse15;
 
+import Lessons8.MyStudent;
+
 import java.util.Arrays;
 import java.util.IllegalFormatCodePointException;
 import java.util.LinkedList;
@@ -71,15 +73,23 @@ public class HashTable {
     public static void main(String[] args) {
         HashTable hashTable = new HashTable();
 
-        hashTable.put("google.com", "192.168.0.1");
-        hashTable.put("1google.com", "192.168.0.1");
-        hashTable.put("yahoo.com", "0.0.0.0");
+        MyStudent ivanov = new MyStudent(1, "Ivanov");
 
-        Object obj =  hashTable.get("google.com");
+        MyStudent petrov = new MyStudent(2, "Petrov");
+
+        MyStudent sidorov = new MyStudent(3, "Sidorov");
+
+
+        hashTable.put(ivanov, "192.168.0.1");
+        hashTable.put(petrov, "192.168.0.1");
+        hashTable.put(sidorov, "0.0.0.0");
+
+        Integer id = 1;
+        String surname = "Ivanov";
+        MyStudent studentToFinde = new MyStudent(id, surname);
+
+        Object obj =  hashTable.get(studentToFinde );
         System.out.println(obj);
-        System.out.println(hashTable);
-        hashTable.put("yahoo.com", "8.8.8.8");
-        System.out.println(hashTable);
     }
 
     private int getHashCode(Object key){
